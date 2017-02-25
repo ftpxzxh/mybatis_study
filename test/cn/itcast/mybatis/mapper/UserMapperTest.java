@@ -34,7 +34,7 @@ public class UserMapperTest {
 				.build(inputStream);
 	}
 
-	//用户信息的综合（高级） 查询
+	//用户信息的综合 查询
 	@Test
 	public void testFindUserList() throws Exception {
 		
