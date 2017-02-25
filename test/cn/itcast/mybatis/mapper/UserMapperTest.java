@@ -34,7 +34,7 @@ public class UserMapperTest {
 				.build(inputStream);
 	}
 
-	//用户信息的综合 查询
+	//用户信息的综合（高级） 查询
 	@Test
 	public void testFindUserList() throws Exception {
 		
@@ -94,7 +94,8 @@ public class UserMapperTest {
 		
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 		
-		//创建UserMapper对象，mybatis自动生成mapper代理对象
+		//创建UserMapper对象，mybatis自动生成mapper代理对象。
+//		注意要把mapper.xml文件在Mybatis的总配置文件sqlMapConfig中引入
 		UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
 		
 		//调用userMapper的方法
