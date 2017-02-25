@@ -139,7 +139,7 @@ public class MybatisFirst {
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 
 		// 传入id删除 用户
-		sqlSession.delete("test.deleteUser", 39);
+		sqlSession.delete("test.deleteUser", 28);
 
 		// 提交事务
 		sqlSession.commit();
@@ -167,7 +167,7 @@ public class MybatisFirst {
 		
 		User user = new User();
 		//必须设置id
-		user.setId(41);
+		user.setId(27);
 		user.setUsername("王大军");
 		user.setBirthday(new Date());
 		user.setSex("2");
